@@ -54,10 +54,10 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/projects', (req, res) => {
-    res.render('projects.hbs'), {
-        pageTitle: 'Projects page'
-    }
-})
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page'
+    });
+});
 
 // /bad route - send b ack json with errorMessage "Error handling request"
 
